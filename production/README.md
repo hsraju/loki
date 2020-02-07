@@ -57,7 +57,7 @@ $ go get github.com/grafana/loki
 $ cd $GOPATH/src/github.com/grafana/loki # GOPATH is $HOME/go by default.
 
 $ go build ./cmd/loki
-$ ./loki -config.file=./cmd/loki/loki-local-config.yaml
+$ ./loki --config.file=./cmd/loki/loki-local-config.yaml
 ...
 ```
 
@@ -94,7 +94,7 @@ $ CGO_ENABLED=0 go build ./cmd/promtail
 Once Promtail is built, to run Promtail, use the following command:
 
 ```bash
-$ ./promtail -config.file=./cmd/promtail/promtail-local-config.yaml
+$ ./promtail --config.file=./cmd/promtail/promtail-local-config.yaml
 ...
 ```
 
